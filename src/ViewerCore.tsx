@@ -425,9 +425,9 @@ export default class ViewerCore extends React.Component<ViewerProps, ViewerCoreS
       default:
         break;
     }
-    if (isFeatrue) {
-      e.preventDefault();
-    }
+//     if (isFeatrue) {
+//       e.preventDefault();
+//     }
   }
 
   handleTransitionEnd = e => {
