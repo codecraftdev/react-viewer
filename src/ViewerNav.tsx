@@ -23,7 +23,7 @@ export default class ViewerNav extends React.Component<ViewerNavProps, any> {
   render() {
     let marginLeft = `calc(50% - ${this.props.activeIndex + 1} * 31px)`;
     let listStyle = {
-      marginLeft: marginLeft
+      marginLeft: marginLeft,
     };
 
     return (
@@ -31,13 +31,13 @@ export default class ViewerNav extends React.Component<ViewerNavProps, any> {
         <ul className={`${this.props.prefixCls}-list ${this.props.prefixCls}-list-transition`} style={listStyle}>
           {this.props.images.map((item, index) =>
             <li
-            key={index}
-            className={index === this.props.activeIndex ? 'active' : ''}
-            onClick={() => { this.handleChangeImg(index); }}
+              key={index}
+              className={index === this.props.activeIndex ? 'active' : ''}
+              onClick={() => { this.handleChangeImg(index); }}
             >
               <img src={item.src} alt={item.alt} />
             </li>
-            )
+          )
           }
         </ul>
       </div>
