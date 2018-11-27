@@ -7,7 +7,7 @@ import ViewerProps, { ImageDecorator, ToolbarConfig } from './ViewerProps';
 import Icon, { ActionType } from './Icon';
 import * as constants from './constants';
 
-function noop() {}
+function noop() { }
 
 const transitionDuration = 300;
 
@@ -388,23 +388,23 @@ export default class ViewerCore extends React.Component<ViewerProps, ViewerCoreS
         isFeatrue = true;
         break;
       // key: ←
-      case 37:
-        if (e.ctrlKey) {
-          this.handleDefaultAction(ActionType.rotateLeft);
-        } else {
-          this.handleDefaultAction(ActionType.prev);
-        }
-        isFeatrue = true;
-        break;
+      // case 37:
+      //   if (e.ctrlKey) {
+      //     this.handleDefaultAction(ActionType.rotateLeft);
+      //   } else {
+      //     this.handleDefaultAction(ActionType.prev);
+      //   }
+      //   isFeatrue = true;
+      //   break;
       // key: →
-      case 39:
-        if (e.ctrlKey) {
-          this.handleDefaultAction(ActionType.rotateRight);
-        } else {
-          this.handleDefaultAction(ActionType.next);
-        }
-        isFeatrue = true;
-        break;
+      // case 39:
+      //   if (e.ctrlKey) {
+      //     this.handleDefaultAction(ActionType.rotateRight);
+      //   } else {
+      //     this.handleDefaultAction(ActionType.next);
+      //   }
+      //   isFeatrue = true;
+      //   break;
       // key: ↑
       case 38:
         this.handleDefaultAction(ActionType.zoomIn);
@@ -425,9 +425,9 @@ export default class ViewerCore extends React.Component<ViewerProps, ViewerCoreS
       default:
         break;
     }
-//     if (isFeatrue) {
-//       e.preventDefault();
-//     }
+    //     if (isFeatrue) {
+    //       e.preventDefault();
+    //     }
   }
 
   handleTransitionEnd = e => {

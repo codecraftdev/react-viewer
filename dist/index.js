@@ -741,23 +741,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    isFeatrue = true;
 	                    break;
 	                // key: ←
-	                case 37:
-	                    if (e.ctrlKey) {
-	                        _this.handleDefaultAction(_Icon.ActionType.rotateLeft);
-	                    } else {
-	                        _this.handleDefaultAction(_Icon.ActionType.prev);
-	                    }
-	                    isFeatrue = true;
-	                    break;
+	                // case 37:
+	                //   if (e.ctrlKey) {
+	                //     this.handleDefaultAction(ActionType.rotateLeft);
+	                //   } else {
+	                //     this.handleDefaultAction(ActionType.prev);
+	                //   }
+	                //   isFeatrue = true;
+	                //   break;
 	                // key: →
-	                case 39:
-	                    if (e.ctrlKey) {
-	                        _this.handleDefaultAction(_Icon.ActionType.rotateRight);
-	                    } else {
-	                        _this.handleDefaultAction(_Icon.ActionType.next);
-	                    }
-	                    isFeatrue = true;
-	                    break;
+	                // case 39:
+	                //   if (e.ctrlKey) {
+	                //     this.handleDefaultAction(ActionType.rotateRight);
+	                //   } else {
+	                //     this.handleDefaultAction(ActionType.next);
+	                //   }
+	                //   isFeatrue = true;
+	                //   break;
 	                // key: ↑
 	                case 38:
 	                    _this.handleDefaultAction(_Icon.ActionType.zoomIn);
